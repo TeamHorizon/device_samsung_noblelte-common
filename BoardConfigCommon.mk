@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-LOCAL_PATH := device/samsung/zero-common
+LOCAL_PATH := device/samsung/noblelte-common
 
 # Do not set vendor to not automatically include hardware/samsung
 BOARD_VENDOR :=
@@ -28,7 +28,4 @@ TARGET_SOC := exynos7420
 -include $(LOCAL_PATH)/configs/board/*.mk
 
 # inherit from the proprietary version
--include vendor/samsung/zero-common/BoardConfigVendor.mk
-
-# inherit from the NexusOS vendor-repo
--include vendor/nexus/board.mk
+-include vendor/samsung/noblelte-common/BoardConfigVendor.mk

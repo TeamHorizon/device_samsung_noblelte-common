@@ -34,10 +34,5 @@ TARGET_UNIFIED_DEVICE := true
 BOARD_OVERRIDE_RS_CPU_VARIANT_32 := cortex-a53.a57
 BOARD_OVERRIDE_RS_CPU_VARIANT_64 := cortex-a57
 
-# TWRP
-ifneq ($(strip $(wildcard $(TOP)/bootable/recovery/variables.h)),)
--include device/samsung/zero-common/twrp.mk
-endif
-
 # WFD
 BOARD_USES_WFD := true

@@ -16,4 +16,4 @@
 #
 
 # Properties
-TARGET_SYSTEM_PROP += device/samsung/zero-common/zero-common.prop
+TARGET_SYSTEM_PROP += device/samsung/noblelte-common/noblelte-common.prop

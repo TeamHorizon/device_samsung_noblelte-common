@@ -15,14 +15,6 @@
 #
 
 # Common Overlays
-DEVICE_PACKAGE_OVERLAYS += device/samsung/zero-common/overlay
+DEVICE_PACKAGE_OVERLAYS += device/samsung/noblelte-common/overlay
 
-ifneq ($(filter zerofltespr zeroltespr,$(TARGET_DEVICE)),)
-DEVICE_PACKAGE_OVERLAYS += device/samsung/zero-common/overlay-cdma
-else
-DEVICE_PACKAGE_OVERLAYS += device/samsung/zero-common/overlay-gsm
-endif
-
-ifneq ($(NEXUS_VERSION),)
-DEVICE_PACKAGE_OVERLAYS += device/samsung/zero-common/overlay-nexus
-endif
+DEVICE_PACKAGE_OVERLAYS += device/samsung/noblelte-common/overlay-gsm

@@ -1,9 +1,10 @@
 ###
-# BEGIN zero (SM-G92[0/5]x) device-properties
+# BEGIN noblelte (SM-N920x) device-properties
 #
 # Copyright (C) 2016 The CyanogenMod Project
 # Copyright (C) 2017 The LineageOS Project
 # Copyright (C)      TeamNexus
+# Copyright (C) 2017 USA-RedDragon
 #
 
 #
@@ -82,5 +83,5 @@ ro.sys.sdcardfs=1
 wifi.interface=wlan0
 
 #
-# END zero device-properties
+# END noblelte device-properties
 ###
