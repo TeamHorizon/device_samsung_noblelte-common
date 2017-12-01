@@ -16,4 +16,5 @@
 #
 
 # Properties
-TARGET_SYSTEM_PROP += device/samsung/noblelte-common/noblelte-common.prop
+PRODUCT_COPY_FILES += \
+    device/samsung/zero-common/noblelte-common.prop:system/vendor/build.prop
