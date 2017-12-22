@@ -13,6 +13,8 @@ on early-init
 on init
     export LD_SHIM_LIBS "/vendor/lib64/hw/fingerprint.vendor.exynos5.so|/vendor/lib64/libbauthtzcommon_shim.so:/vendor/lib/libexynoscamera.so|/vendor/lib/libexynoscamera_shim.so:/vendor/lib64/libexynoscamera.so|/vendor/lib64/libexynoscamera_shim.so:/system/bin/gpsd|/vendor/lib64/gpsd_shim.so"
 
+write /proc/sys/kernel/panic_on_oops 1
+
 # RIL <-> audioserver comm
     chmod 0644 /proc/cmdline
 

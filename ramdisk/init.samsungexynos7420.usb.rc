@@ -14,13 +14,7 @@ on property:sys.usb.config=none
     stop adbd
     setprop sys.usb.state ${sys.usb.config}
 
-on boot
-    # default USB gadget configuration
-    write /sys/class/android_usb/android0/iManufacturer $ro.product.manufacturer
-    write /sys/class/android_usb/android0/iProduct $ro.product.model
-    write /sys/class/android_usb/android0/iSerial $ro.serialno
-    write /sys/class/android_usb/f_mass_storage/inquiry_string "Samsung"
-
+on init
     # default mode-configuration for ACM + ADB
     write /sys/class/android_usb/android0/enable 0
     write /sys/class/android_usb/android0/idVendor 04e8
@@ -31,6 +25,15 @@ on boot
     stop adbd
     start adbd
     setprop sys.usb.state acm,adb
+
+
+on boot
+    # default USB gadget configuration
+    write /sys/class/android_usb/android0/iManufacturer $ro.product.manufacturer
+    write /sys/class/android_usb/android0/iProduct $ro.product.model
+    write /sys/class/android_usb/android0/iSerial $ro.serialno
+    write /sys/class/android_usb/f_mass_storage/inquiry_string "Samsung"
+
 
 on property:sys.usb.config=adb
     write /sys/class/android_usb/android0/enable 0
