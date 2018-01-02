@@ -15,8 +15,8 @@
 #
 
 # Hardware
-BOARD_HARDWARE_CLASS += hardware/samsung/cmhw
-BOARD_HARDWARE_CLASS += device/samsung/noblelte-common/cmhw
+#BOARD_HARDWARE_CLASS += hardware/samsung/cmhw
+#BOARD_HARDWARE_CLASS += device/samsung/noblelte-common/cmhw
 
 # HWCServices
 BOARD_USES_HWC_SERVICES := true
