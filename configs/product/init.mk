@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2016 The CyanogenMod Project
+# Copyright (C) 2017 TeamNexus
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,5 +14,6 @@
 # limitations under the License.
 #
 
-# Radio
-BOARD_PROVIDES_LIBRIL := true
+# init.rc
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/init/rild.rc:system/vendor/etc/init/rild.rc
