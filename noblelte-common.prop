@@ -79,7 +79,7 @@ persist.sys.ui.hw=true
 ro.chipname=exynos7420
 ro.nfc.sec_hal=true
 ro.sf.lcd_density=480
-
+ro.ril.telephony.nstrings=6
 #
 # Storage
 #

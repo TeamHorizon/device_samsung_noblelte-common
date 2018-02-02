@@ -11,6 +11,7 @@ type prov_efs_file, file_type;
 type sensor_efs_file, file_type;
 type sec_efs_file, file_type;
 type wifi_efs_file, file_type;
+type sysfs_camera, fs_type, sysfs_type;
 
 ### sysfs types
 type sysfs_mdnie_writable, fs_type, sysfs_type, mlstrustedobject;

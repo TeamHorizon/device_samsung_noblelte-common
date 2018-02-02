@@ -17,7 +17,7 @@
 # Radio
 PRODUCT_PACKAGES += \
 	libxml2 \
-	libprotobuf-cpp-full \
+	libprotobuf-cpp-shim \
 	rild \
 	libreference-ril \
 	libril \
@@ -32,8 +32,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.radio.add_power_save=1 \
     persist.radio.apm_sim_not_pwdn=1 \
     rild.libpath=/system/lib64/libsec-ril.so \
-    rild.libpath2=/system/lib64/libsec-ril-dsds.so \
-    ro.telephony.ril_class=SlteRIL \
     telephony.lteOnGsmDevice=1 \
     telephony.lteOnCdmaDevice=0 \
     ro.telephony.default_network=9 \
